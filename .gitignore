@@ -1,0 +1,28 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Data (too large for git)
+data/*.csv
+data/*.npy
+data/*.pt
+
+# Model weights (too large)
+models/*.pt
+models/*.h5
+models/*.pth
+
+# Outputs / plots
+outputs/*.png
+outputs/*.jpg
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
