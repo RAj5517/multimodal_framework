@@ -1,0 +1,28 @@
+{
+  "model_type": "multimodal_framework",
+  "embedding_dim": 64,
+  "unified_dim": 128,
+  "num_modalities": 3,
+  "modalities": [
+    "academic",
+    "behavioral",
+    "activity"
+  ],
+  "input_dims": {
+    "academic": 5,
+    "behavioral": 5,
+    "activity": 5
+  },
+  "training": {
+    "method": "SimCLR contrastive learning",
+    "epochs": 184,
+    "best_loss": 0.5869,
+    "temperature": 0.07,
+    "batch_size": 128,
+    "hardware": "NVIDIA RTX 3050 4GB"
+  },
+  "metrics": {
+    "silhouette_score": 0.331,
+    "adjusted_rand_index": 0.9989
+  }
+}
