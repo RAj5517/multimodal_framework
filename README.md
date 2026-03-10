@@ -101,6 +101,21 @@ sharp — the model must be confident, not just directionally correct.
 - Early stopping with patience=30
 
 ---
+## Model
+
+Trained weights are available on HuggingFace:
+
+**[raj5517/multimodal-representation-framework](https://huggingface.co/raj5517/multimodal-representation-framework)**
+```python
+from huggingface_hub import hf_hub_download
+from safetensors.torch import load_file
+
+weights = load_file(hf_hub_download(
+    repo_id="raj5517/multimodal-representation-framework",
+    filename="model.safetensors"
+))
+```
+---
 
 ## Results
 
